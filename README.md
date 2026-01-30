@@ -168,6 +168,8 @@ columns: datetime, NonSpin, RegDown, RegUp, Spin
 Recommended baseline images to show in UI/demo:
 - `hourly_Cum_Profit.png` (offline optimal benchmark P&L; hourly bars + cumulative line)
 - `battery_soc.png` (constraint credibility; SoC stays within bounds)
+![Battery SoC](backend/python/img/battery_soc.png)
+![Baseline Hourly Cum Profit](backend/python/img/hourly_Cum_Profit.png)
 ---
 ## Mode B: AI Forecast + Rolling MPC (Granite TTM inference-only)
 This mode simulates realistic operation under uncertainty:
@@ -208,6 +210,7 @@ mpc_cum_profit.png (if plots enabled/exported)
 ```
 Recommended MPC image to show in UI/demo:
 - `mpc_cum_profit.png` (realized profit curve under uncertainty; forecast-driven dispatch)
+![Baseline MPC Profit](backend/python/optimization_results/mpc_granite_1000_1100_H42/mpc_cum_profit.png)
 ---
 ## Metrics (what to show judges)
 Forecast metrics are reported per series in:
