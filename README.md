@@ -165,11 +165,13 @@ columns: datetime, soc_asset_1
 plot_reserve_commitments.csv
 columns: datetime, NonSpin, RegDown, RegUp, Spin
 ```
-Recommended baseline images to show in UI/demo:
-- `hourly_Cum_Profit.png` (offline optimal benchmark P&L; hourly bars + cumulative line)
+Recommended baseline images to show in UI/demo
 - `battery_soc.png` (constraint credibility; SoC stays within bounds)
 ![Battery SoC](backend/python/img/battery_soc.png)
+- `hourly_Cum_Profit.png` (offline optimal benchmark P&L; hourly bars + cumulative line)
 ![Baseline Hourly Cum Profit](backend/python/img/hourly_Cum_Profit.png)
+- `energy.png`
+![Energy Prices](backend/python/img/energy.png)
 ---
 ## Mode B: AI Forecast + Rolling MPC (Granite TTM inference-only)
 This mode simulates realistic operation under uncertainty:
